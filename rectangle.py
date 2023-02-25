@@ -14,6 +14,7 @@ class Rectangle:
         """ 
         return self.a>0 and self.b>0
 
+
     def perimeter(self) -> float:
         """
         This method finds the perimeter of the rectangle.
