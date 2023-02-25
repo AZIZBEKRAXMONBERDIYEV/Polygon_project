@@ -10,7 +10,9 @@ class Square:
         Returns:
             bool: This method checks if the square is valid.
         """
-        return self.square_side >0
+
+        return self.square_side > 0
+
     
     def area(self) -> float:
         """
@@ -21,7 +23,7 @@ class Square:
             float or int: return area of the square if the square is valid, 0 otherwise
         """
         if self.is_valid():
-            self.square_side**2
+            return self.square_side**2
         else:
             return 0
     
@@ -34,6 +36,6 @@ class Square:
             float: return perimeter of the square if the square is valid, 0 otherwise
         """
         if self.is_valid():
-            self.square_side*4
+            return 4*self.square_side
         else:
             return 0

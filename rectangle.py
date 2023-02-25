@@ -12,7 +12,8 @@ class Rectangle:
         Returns: 
             bool: True if the rectangle is valid, False otherwise
         """ 
-        return self.b > 0 and self.a
+        return self.a>0 and self.b>0
+
 
     def perimeter(self) -> float:
         """
