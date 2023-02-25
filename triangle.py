@@ -24,12 +24,13 @@ class Triangle:
 
         Note: typies are 'Teng yonli', 'Teng tomonli', 'Turli tomonli'
         '''
-        if self.a ==self.b or self.a == self.c or self.b == self.c:
-            return "Teng yonli"
-        if self.a == self.b and self.a == self.c:
-            return "Teng tomonli"
-        if self.a != self.b or self.a != self.c or self.b != self.c:
-            return "Turli tomonli"
+        if self.is_valid():
+            if self.a ==self.b or self.a == self.c or self.b == self.c:
+                return "Teng yonli"
+            if self.a == self.b and self.a == self.c:
+                return "Teng tomonli"
+            if self.a != self.b or self.a != self.c or self.b != self.c:
+                return "Turli tomonli"
         
     def perimeter(self) -> float:
         '''
