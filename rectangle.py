@@ -24,6 +24,8 @@ class Rectangle:
         """
         if self.is_valid():
             return 2*(self.a+self.b)
+        else:
+            return 0
 
     def area(self) -> float:
         """
@@ -33,4 +35,7 @@ class Rectangle:
         Returns:
             float or int:  return area of the rectangle if the rectangle is valid, 0 otherwise 
         """
-        pass
+        if self.is_valid():
+            return self.a*self.b
+        else:
+            return 0
